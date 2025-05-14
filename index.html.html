@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Form</title>
+
+</head>
+<body>
+ <center> <h1>Job Application Form</h1></center>
+
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      First Name* <input type="text" required><br><br>
+      Last Name* <input type="text" required><br><br>
+      Date of Birth <input type="date"><br><br>
+      Gender
+      <input type="radio" name="gender">Male
+      <input type="radio" name="gender">Female
+      <input type="radio" name="gender">Other<br><br>
+      Profile Picture* <input type="file" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+      Email* <input type="email" required><br><br>
+      Phone Number* <input type="text" placeholder="10-digit number" required><br><br>
+      Address<br>
+      <textarea rows="3" cols="30"></textarea><br><br>
+      Country
+      <select>
+        <option>India</option>
+        <option>Other</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Education Background</legend>
+      Highest Qualification
+      <select>
+        <option>Graduate</option>
+        <option>Postgraduate</option>
+        <option>PhD</option>
+      </select><br><br>
+      Specialization <input type="text"><br><br>
+      Year of Graduation <input type="number">
+    </fieldset>
+
+    <fieldset>
+      <legend>Job Preferences</legend>
+      Preferred Role <input type="text"><br><br>
+      Expected Salary <input type="text"><br><br>
+      Preferred Locations<br>
+      <input type="checkbox">Bangalore
+      <input type="checkbox">Delhi
+      <input type="checkbox">Remote
+      <input type="checkbox">Pune<br><br>
+      Willing to Relocate?
+      <input type="checkbox">
+    </fieldset>
+
+    <fieldset>
+      <legend>Create Account</legend>
+      Password* <input type="password" placeholder="Min 6 characters" required><br><br>
+      Confirm Password* <input type="password" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Resume</legend>
+      Upload Resume (PDF only)* <input type="file" accept=".pdf" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Agreement</legend>
+      <input type="checkbox" required> I agree to the terms and conditions*
+    </fieldset>
+
+    <input type="submit" value="Submit Application">
+    <input type="reset" value="Reset Form">
+  </form>
+</body>
+</html>
